@@ -1,0 +1,9 @@
+{
+    "mainLanguage": "English",
+    "inputFolder": "strings",
+    "outputFolder" : "generated",
+    "translatedTo": [
+        "German",
+        "Esperanto"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "playPacoSako": "Play Paco Ŝako",
+    "createNewGame": "Create a new Game",
+    "presetLightspeed": "Lightspeed",
+    "presetBlitz": "Blitz",
+    "presetRapid": "Rapid",
+    "presetRelaxed": "Relaxed",
+    "presetCustom": "Custom",
+    "presetNoTimer": "No Timer",
+    "timeLimitNothing": "Play without time limit",
+    "createMatch": "Create Match",
+    "iGotAnInvite": "I got an invite",
+    "enterMatchId": "Enter Match Id",
+    "matchId": "Match Id",
+    "joinGame": "Join Game",
+    "recentGamesDoSearch": "Search for recent games",
+    "recentGamesSearching": "Searching for recent games...",
+    "recentGamesError": "Error while searching for games! Try again?",
+    "recentGamesEmpty": "There were no games recently started. Check again?",
+    "recentGamesRefresh": "Refresh",
+    "match": "Match"
+}

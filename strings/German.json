@@ -1,0 +1,16 @@
+{
+    "playPacoSako": "Spiel Paco Ŝako",
+    "createNewGame": "Neues Spiel erstellen",
+    "presetLightspeed": "Lichtgeschwindigkeit",
+    "presetBlitz": "Blitz",
+    "presetRapid": "Rapid",
+    "presetRelaxed": "Entspannt",
+    "presetCustom": "Benutzerdefiniert",
+    "presetNoTimer": "Ohne Timer",
+    "timeLimitNothing": "Ohne Timer Spielen",
+    "createMatch": "Spiel starten",
+    "iGotAnInvite": "Ich wurde eingeladen",
+    "enterMatchId": "Spielnummer eingeben",
+    "matchId": "Spielnummer",
+    "joinGame": "Spiel beitreten"
+}
