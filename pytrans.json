@@ -1,7 +1,7 @@
 {
     "mainLanguage": "English",
     "inputFolder": "strings",
-    "outputFolder" : "generated",
+    "output" : "generated/Translations.elm",
     "translatedTo": [
         "German",
         "Esperanto"

@@ -76,8 +76,9 @@ elif args.status:
 
 # Make sure input/output exists
 input_folder = config["inputFolder"]
-if not os.path.exists(config["outputFolder"]):
-    os.makedirs(config["outputFolder"])
+output_folder = path.dirname(config["output"])
+if not os.path.exists(output_folder):
+    os.makedirs(output_folder)
 
 
 def one_definition(key, value):
@@ -88,8 +89,7 @@ def one_definition(key, value):
 
 
 def write_language_file(language_name, data):
-    f = open(
-        path.join(config["outputFolder"], language_name + ".elm"), "w")
+    f = open(config["output"], "w")
 
     f.write("module Translations exposing (..)\n\n")
     f.write(f"{{-| Generated translation file for {language_name}\n-}}\n\n\n")
@@ -115,10 +115,6 @@ def load_data(language_name):
     return json.load(open(path.join(input_folder, language_name + ".json")))
 
 
-main_language_data = load_data(main_language_name)
-write_language_file(main_language_name, main_language_data)
-
-
 def default_missing_values(translated, defaults):
     result = dict()
     for key in defaults:
@@ -129,6 +125,6 @@ def default_missing_values(translated, defaults):
     return result
 
 
-for lang in config["translatedTo"]:
-    data = default_missing_values(load_data(lang), main_language_data)
-    write_language_file(lang, data)
+main_language_data = load_data(main_language_name)
+data = default_missing_values(load_data(dev_language), main_language_data)
+write_language_file(dev_language, data)
