@@ -1,9 +1,27 @@
 {
-    "mainLanguage": "English",
+    "mainLanguage": {
+        "filename": "English.json",
+        "name": "English",
+        "locale": "en"
+    },
     "inputFolder": "strings",
-    "output" : "generated/Translations.elm",
+    "output": "generated/Translations.elm",
     "translatedTo": [
-        "German",
-        "Esperanto"
-    ]
+        {
+            "filename": "German.json",
+            "name": "German",
+            "locale": "de"
+        },
+        {
+            "filename": "E-o.json",
+            "name": "Esperanto",
+            "locale": "eo"
+        }
+    ],
+    "scripts": {
+        "compile": [
+            "echo Hello, {name}! Locale is {locale}.",
+            "echo \"We'll be processing {filename}!\""
+        ]
+    }
 }
