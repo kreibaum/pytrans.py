@@ -120,8 +120,10 @@ if not os.path.exists(output_folder):
 
 def one_definition(key, value):
     # Custom escape because elm escapes differently from json & from python.
-    value_escaped = value.replace("\"", "\\\"").replace(
-        "\\", "\\\\").replace("\n", "\\n")
+    # It is important, that the "\\" -> "\\\\" happens first, because otherwise
+    # it would escape the other escapes.
+    value_escaped = value.replace("\\", "\\\\").replace(
+        "\"", "\\\"").replace("\n", "\\n")
     return f'{key} : String\n{key} =\n    "{value_escaped}"\n\n\n'
 
 
