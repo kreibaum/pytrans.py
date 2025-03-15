@@ -1,4 +1,9 @@
+# Archived
+
+Rewritten in Rust and included directly with https://github.com/kreibaum/pacosako/
+
 # pytrans.py
+
 Turns json translation files into elm code for build time website translation
 
 Intended usage is, that you put pytrans.py on your path and then you can run
